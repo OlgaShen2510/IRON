@@ -1,0 +1,39 @@
+.community{
+&__banner{
+    background-image: url('../assets/images/community.png');
+    background-size: cover;
+    padding-top: 35vw;
+    padding-bottom: 5vw;
+}
+
+h4 {
+    @extend %tpl-font-h1;
+    color: #FFFFFF;
+    max-width: 800px;
+    padding-left: 30px;
+}
+
+p {
+    @extend %tpl-font-text;
+}
+
+&__container{
+    width: 90%;
+   margin: 0 auto;
+   text-align:start;
+
+   @media (min-width: 768px){
+    max-width: 960px;
+    width: 100%;
+    padding: 40px 20px;
+   }
+}
+&__subtitle{
+    display: flex;
+    flex-direction: column;
+    text-align:start;
+    gap:20px;
+}
+
+
+}

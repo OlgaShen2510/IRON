@@ -1,0 +1,132 @@
+.main_black {
+    @extend %tpl-backgr-black;
+    
+    h1, 
+    h2 {
+        @extend %tpl-font-h1;
+    }
+
+    p {
+        @extend %tpl-font-text;
+    }
+}
+
+%tpl-title-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+        @media (min-width:768px) {
+            max-width: 960px;
+            width: 100%;
+            padding: 0 20px;
+        }
+}
+
+%tpl-text-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+        @media (min-width:768px) {
+            max-width: 800px;
+            width: 100%;
+            padding: 0 20px;
+        }
+}
+
+.headline {
+
+    &__title {
+        @extend %tpl-title-container;
+        padding-bottom: 50px;
+    }
+
+    &__banner {
+        padding-top: 3vw;
+        padding-bottom: 50px;
+        margin-bottom: 10vw;
+        color: black;
+        background-image: url('../assets/images/robot1.png');
+        background-size: cover;
+        background-position: center;
+        max-width: 100vw;
+    }
+
+    &__banner1 {
+        padding-top: 16vw;
+        padding-bottom: 34vw;
+        margin-bottom: 10vw;
+        color:white;
+        background-image: url('../assets/images/title-1.png');
+        background-size: cover;
+        background-position: center;
+        max-width: 100vw;
+    }
+
+    &__banner2 {
+        padding-top: 16vw;
+        padding-bottom: 20vw;
+        margin-bottom: 7vw;
+        color:white;
+        background-image: url('../assets/images/title-2.png');
+        background-size: cover;
+        background-position: center;
+        max-width: 100vw;
+    }
+    
+    &__banner3 {
+        padding-top: 16vw;
+        padding-bottom: 30vw;
+        
+        color:white;
+        background-image: url('../assets/images/title-3.png');
+        background-size: cover;
+        background-position: center;
+        max-width: 100vw;
+    }
+
+    &__wrapper {
+        border: 1px solid;
+        border-radius: 10px;
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 2vw;
+        margin-bottom: 5vw;
+    }
+
+    &__container {
+        @extend %tpl-text-container;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    &__list {
+        @extend %tpl-font-text;
+    }
+
+    &__button {
+        max-width: 220px;
+        font-size: 17.5px;
+        width: 100%;
+        margin-top: 30vh;
+
+        @media (min-width:768px) {
+            margin-top: 320px;
+        }
+
+            
+        &:hover {
+            box-shadow: 0 0 25px 25px whitesmoke inset, 0 0 10px 10px white;
+            transition: all 150ms ease-in-out;
+        }
+    }
+    
+    &__text {
+        padding: 1vw;
+    }
+}

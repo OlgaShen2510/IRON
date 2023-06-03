@@ -1,0 +1,65 @@
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../assets/fonts/HelveticaNeueCyr-Heavy.ttf') format('truetype'),
+	url('../assets/fonts/HelveticaNeueCyr-Heavy.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../assets/fonts/HelveticaNeueCyr-Medium.ttf') format('truetype'),
+	url('../assets/fonts/HelveticaNeueCyr-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+%tpl-font-h1 {
+	font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: calc(30px + 18 * (100vw / 1920));
+    line-height: 110%;
+}
+// все заголовки макета, кроме страницы "О роботе"
+
+%tpl-font-h2 {
+	font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 900;
+    font-size: calc(18px + 14 * (100vw / 1920));
+    line-height: 110%;
+}
+//используется 1) на странице "О роботе" в заголовках с классом title 2) в базе знаний
+
+%tpl-font-text {
+	font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 550;
+    font-size: calc(14px + 4 * (100vw / 1920)); 
+    line-height: 150%;
+}
+// для всего текста и header один стиль
+
+%tpl-font-footer {
+	font-family: 'HelveticaNeueCyr';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 13px;
+    line-height: 150%;
+}
+// для текста footer
+
+%tpl-backgr-black {
+    background-color: black;
+    color: white;
+}
+
+%tpl-backgr-white {
+    background-color: #FBFBFB;
+    color: black;
+}
+
+// для цвета фона и текста секций.
+
+

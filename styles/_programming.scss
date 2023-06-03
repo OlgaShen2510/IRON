@@ -1,0 +1,40 @@
+.programming_photo {
+    background-image: url('/assets/images/programm_photo.svg');
+    background-size: cover;
+
+    padding-top: 30vw;
+    padding-bottom: 5vw;
+    text-align: center;
+}
+
+
+
+.programming_container {
+    display: grid;
+    justify-items: center;
+
+
+}
+
+.programming_option {
+    width: 90%;
+    margin: 5vh auto;
+    text-align: center;
+
+
+    @media (min-width:768px) {
+        display: grid;
+        max-width: 800px;
+        justify-items: center;
+        text-align: center;
+        gap: 5vh;
+        margin: 10vh 0 10vh 0;
+    }
+
+}
+
+.programming_logo {
+    width: 35%;
+    padding-bottom: 5vh;
+
+}
