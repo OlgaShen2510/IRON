@@ -45,10 +45,11 @@
             }
 
             &__item {
+                border: 2px solid transparent;
+                border-radius: 15px;
+                padding: 10px;
                 &:hover {
                     border: 2px solid;
-                    border-radius: 15px;
-                    padding: 10px;
                 }
             }
         }

@@ -89,10 +89,13 @@
     align-items: center;
   }
 }
-.header__menu .nav__item:hover {
-  border: 2px solid;
+.header__menu .nav__item {
+  border: 2px solid transparent;
   border-radius: 15px;
   padding: 10px;
+}
+.header__menu .nav__item:hover {
+  border: 2px solid;
 }
 
 #menu__toggle {
